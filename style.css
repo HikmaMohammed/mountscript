@@ -1,0 +1,29 @@
+body {
+    font-family: 'Inter', sans-serif;
+  }
+  .header-bg, .footer-bg {
+    background-color: #081F41 !important;
+  }
+  .service-box {
+    background-color: #081F41;
+  }
+  .service-box:hover {
+    transform: scale(1.05);
+  }
+  .blog-card img {
+    height: 200px;
+  }
+
+ .for-contact{
+    background-color: #1C1E53;
+    width: 100%;
+    
+ }
+
+ #contact{
+    width: 100%;
+ }
+
+ .bg-blue-50{
+    background-color: #eff6ff !important;
+ }

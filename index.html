@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mount Script</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+  <!-- Header -->
+<header class="header-bg bg-blue-50 text-black p-4 ">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold">Mount Script</h1>
+      <nav>
+        <ul class="flex space-x-10">
+          <li><a href="#home" class="hover:underline">Home</a></li>
+          <li><a href="#about" class="hover:underline">About Us</a></li>
+          <li><a href="#services" class="hover:underline">Services</a></li>
+          <li><a href="#blog" class="hover:underline">Blog</a></li>
+        </ul>
+      </nav>
+      <button class="bg-black text-white px-4 py-2 rounded">Login</button>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="header-bg text-white grid grid-cols-1 md:grid-cols-2 gap-8 py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold">Welcome to Mount Script</h2>
+      <p class="mt-4 max-w-xl mx-auto">A premier tech company offering web and mobile app development, digital marketing, Python programming, custom software solutions, and AI applications. We deliver innovative, tailored solutions to drive business growth and success.</p>
+      <div class="mt-6">
+        <a href="#about" class="bg-yellow-500 text-black px-6 py-3 rounded mr-4">Read More</a>
+        <a href="#courses" class="underline">Courses</a>
+      </div>
+    </div>
+    <div>
+        <img src="images/Computer-Science-and-Engineering-1024x384.jpg" height="800px" alt="">
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="py-20 bg-blue-50 text-center grid grid-cols-1 md:grid-cols-2  gap-8">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold">About Us</h2>
+      <div class="mt-4 max-w-3xl mx-auto">
+        <p class="text-lg">Mount Script is a leading technology solutions provider dedicated to empowering businesses with innovative and tailored digital services. Founded with a passion for technology and a commitment to excellence, we specialize in web and mobile app development, digital marketing, Python programming, custom software solutions, and AI applications.</p>
+      </div>
+      
+    </div>
+    <div>
+        <img src="images/comp.jpeg" alt="About Us Image" class="mt-6 mx-auto rounded-lg shadow-lg max-w-full h-auto">
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-gray-100 text-center">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold">Services</h2>
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="service-box text-white p-6 rounded transform transition-transform">
+          <i class="fas fa-paint-brush text-3xl"></i>
+          <h3 class="text-xl font-bold mt-4">UX-UI Designer</h3>
+          <p class="mt-2">Ensures a product is easy and enjoyable to use by focusing on user needs and behaviors. Creates a visually appealing and consistent interface by focusing on the product's look.</p>
+        </div>
+        <div class="service-box text-white p-6 rounded transform transition-transform">
+          <i class="fas fa-code text-3xl"></i>
+          <h3 class="text-xl font-bold mt-4">Web Development</h3>
+          <p class="mt-2">Crafting responsive and dynamic websites tailored to your business needs, ensuring a seamless user experience across all devices.</p>
+        </div>
+        <div class="service-box text-white p-6 rounded transform transition-transform">
+          <i class="fas fa-bullhorn text-3xl"></i>
+          <h3 class="text-xl font-bold mt-4">Digital Marketing</h3>
+          <p class="mt-2">Implementing effective online marketing strategies to boost your brand's visibility and drive traffic through SEO, social media, and content marketing.</p>
+        </div>
+        <div class="service-box text-white p-6 rounded transform transition-transform">
+          <i class="fas fa-python text-3xl"></i>
+          <h3 class="text-xl font-bold mt-4">Python Programming</h3>
+          <p class="mt-2">Offering expert Python programming services for developing robust and scalable applications, including web, data analysis, and automation solutions.</p>
+        </div>
+        <div class="service-box text-white p-6 rounded transform transition-transform">
+          <i class="fas fa-mobile-alt text-3xl"></i>
+          <h3 class="text-xl font-bold mt-4">Mobile App Development</h3>
+          <p class="mt-2">Designing and developing intuitive mobile applications for iOS and Android platforms to enhance user engagement and accessibility.</p>
+        </div>
+        <div class="service-box text-white p-6 rounded transform transition-transform">
+          <i class="fas fa-robot text-3xl"></i>
+          <h3 class="text-xl font-bold mt-4">Artificial Intelligence</h3>
+          <p class="mt-2">Developing cutting-edge AI applications to automate processes, analyze data, and improve decision-making, driving innovation and growth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-blue-50 py-16">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center">
+        <div class="text-center">
+          <h2 id="clientCount" class="text-4xl font-bold text-gray-800 mb-2">0</h2>
+          <p class="text-gray-600">Clients</p>
+        </div>
+        <div class="text-center">
+          <h2 id="projectCount" class="text-4xl font-bold text-gray-800 mb-2">0</h2>
+          <p class="text-gray-600">Projects</p>
+        </div>
+        <div class="text-center">
+          <h2 id="teamCount" class="text-4xl font-bold text-gray-800 mb-2">0</h2>
+          <p class="text-gray-600">Teams</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="py-20 bg-gray-100 text-center">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold">Blog</h2>
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="blog-card bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <img src="images/ai.jpg" alt="Blog Post Image" class="w-full rounded-t object-cover">
+          <h3 class="text-xl font-bold mt-4">The Importance of AI in Business: Driving Efficiency and Innovation</h3>
+          <p class="mt-2">Explore how AI technologies are transforming industries, enhancing business processes and fostering innovation.</p>
+        </div>
+        <div class="blog-card bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <img src="images/python.jpg" alt="Blog Post Image" class="w-full rounded-t object-cover">
+          <h3 class="text-xl font-bold mt-4">Python Programming: Why It's the Language of Choice for Modern Applications</h3>
+          <p class="mt-2">Discover the reasons behind Python's popularity in software development, its versatility, and its application in building scalable solutions.</p>
+        </div>
+        <div class="blog-card bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <img src="images/digital.jpg" alt="Blog Post Image" class="w-full rounded-t object-cover">
+          <h3 class="text-xl font-bold mt-4">Digital Marketing Strategies for 2024: Trends and Insights</h3>
+          <p class="mt-2">Dive into the latest trends in digital marketing, including SEO, social media, and content marketing strategies that can elevate your brand's online presence and engagement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-20 bg-blue-50 bg-[#f5f8fc]">
+    <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <h2 class="text-2xl font-semibold text-left">Testimonials</h2>
+                <p class="text-gray-500 mt-2 text-left">Those testimonials are our customer</p>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide bg-white p-8 rounded-lg shadow-md ">
+                        <p class="text-xl font-semibold text-gray-800">"Mount Scrip transformed our website into a sleek, user-friendly platform. Their expertise in web development is unmatched!"</p>
+                        <div class="flex items-center mt-4">
+                            <i class="fas fa-user-tie text-3xl text-gray-600"></i>
+                            <div class="ml-4">
+                                <p class="font-bold text-gray-800">Sara Mohammed</p>
+                                <p class="text-sm text-gray-500">Vice President</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                <!-- Pagination Dots -->
+                <div class="swiper-pagination mt-4"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- FAQ Section -->
+<section id="faq" class="py-20 bg-white">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+            <h2 class="text-2xl font-semibold text-left">Frequently Asked Questions</h2>
+            <p class="text-gray-500 mt-2 text-left">Those are frequently asked questions by our clients</p>
+        </div>
+        <div>
+            <div class="space-y-4">
+                <details class="p-4 bg-white border-b border-gray-200">
+                    <summary class="flex justify-between items-center cursor-pointer font-bold text-blue-600">01 What services does Mount Scrip offer? <span class="text-xl">×</span></summary>
+                    <p class="mt-2 text-gray-600">Mount Scrip offers a range of services including web and mobile app development, digital marketing, Python programming, custom software solutions, and AI applications.</p>
+                </details>
+                <details class="p-4 bg-white border-b border-gray-200">
+                    <summary class="flex justify-between items-center cursor-pointer font-bold text-blue-600">02 How experienced is Mount Scrip's team? <span class="text-xl">+</span></summary>
+                    <p class="mt-2 text-gray-600">Our team comprises seasoned professionals with extensive experience in their respective fields, ensuring high-quality deliverables for our clients.</p>
+                </details>
+                <details class="p-4 bg-white border-b border-gray-200">
+                    <summary class="flex justify-between items-center cursor-pointer font-bold text-blue-600">03 Can Mount Scrip handle projects of various sizes? <span class="text-xl">+</span></summary>
+                    <p class="mt-2 text-gray-600">Yes, we handle projects of all sizes, from small-scale solutions to large enterprise-level systems, with a commitment to quality and timely delivery.</p>
+                </details>
+                <details class="p-4 bg-white border-b border-gray-200">
+                    <summary class="flex justify-between items-center cursor-pointer font-bold text-blue-600">04 What industries does Mount Scrip specialize in? <span class="text-xl">+</span></summary>
+                    <p class="mt-2 text-gray-600">We specialize in a range of industries, including finance, healthcare, retail, and more, offering customized solutions to meet specific industry requirements.</p>
+                </details>
+                <details class="p-4 bg-white border-b border-gray-200">
+                    <summary class="flex justify-between items-center cursor-pointer font-bold text-blue-600">05 How does Mount Scrip ensure the security of our data? <span class="text-xl">+</span></summary>
+                    <p class="mt-2 text-gray-600">We prioritize data security through robust encryption, regular security audits, and adherence to industry best practices, ensuring our clients' information is always protected.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+
+ <!-- Contact Section -->
+<section id="contact" class="flex py-20 bg-white">
+    <div class="w-full relative ">
+        <img src="images/typing.jpg" alt="Background Image" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center p-10">
+            <h2 class="text-3xl font-bold">If you have any query you can contact us easily</h2>
+        </div>
+    </div>
+    <div class="for-contact p-4 rounded-lg w-full mx-1">
+        <h2 class="text-white text-2xl font-semibold mb-2">Contact us</h2>
+        <p class="text-gray-400 mb-6">You can reach out to us</p>
+        <form>
+            <div class="mb-4">
+                <input type="text" placeholder="Your Name" class="w-full px-4 py-3 text-gray-300 bg-transparent border border-gray-500 rounded-md focus:outline-none focus:border-yellow-400">
+            </div>
+            <div class="mb-4">
+                <input type="email" placeholder="Email" class="w-full px-4 py-3 text-gray-300 bg-transparent border border-gray-500 rounded-md focus:outline-none focus:border-yellow-400">
+            </div>
+            <div class="mb-6">
+                <textarea placeholder="Your Message" class="w-full px-4 py-3 text-gray-300 bg-transparent border border-gray-500 rounded-md focus:outline-none focus:border-yellow-400" rows="4"></textarea>
+            </div>
+            <button type="submit" class="bg-yellow-400 text-[#1b1947] font-semibold py-3 px-6 rounded-md w-full hover:bg-yellow-500">Submit</button>
+        </form>
+    </div>
+    
+</section>
+
+  
+
+  <!-- Footer -->
+<footer class="footer-bg text-white py-10">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- About Section -->
+      <div>
+        <h3 class="text-lg font-bold mb-4">Mount Script</h3>
+        <p>Mount Script provides exceptional software solutions tailored to meet your business needs, ensuring digital success in a competitive market.</p>
+      </div>
+      
+      <!-- Links Section -->
+      <div>
+        <h3 class="text-lg font-bold mb-4">Services</h3>
+        <ul class="space-y-2">
+          <li><a href="#web-development" class="hover:underline">Ux-Ul Designe</a></li>
+          <li><a href="#mobile-app-development" class="hover:underline">Mobile App Development</a></li>
+          <li><a href="#digital-marketing" class="hover:underline">Digital Marketing</a></li>
+          <li><a href="#ai" class="hover:underline">Mobile App Development</a></li>
+          <li><a href="#ai" class="hover:underline">Artificial Intelligent</a></li>
+
+        </ul>
+      </div>
+      
+      <!-- Contact Info Section -->
+      <div>
+        <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+        <p>Email: info@mountscript.com</p>
+        <p>Phone: +251 456 7890</p>
+        <p>Address: 1234 Addis Ababa, Ethiopia</p>
+        <div class="flex space-x-4 mt-4">
+          <a href="#" class="hover:text-yellow-500"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="hover:text-yellow-500"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="hover:text-yellow-500"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="hover:text-yellow-500"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+  <div class="header-bg bg-blue-50 text-black p-4 ">
+    <div class="container mx-auto flex justify-between items-center">
+      <p>Copyright 2024: All right by Mount Script</p>
+      <nav>
+        <ul class="flex space-x-10">
+          <li><a href="#home" class="hover:underline">Home</a></li>
+          <li><a href="#about" class="hover:underline">About Us</a></li>
+          <li><a href="#services" class="hover:underline">Services</a></li>
+          <li><a href="#blog" class="hover:underline">Blog</a></li>
+        </ul>
+      </nav>
+      <button class="bg-black text-white px-4 py-2 rounded">Login</button>
+    </div>
+  </div>
+  <script>
+    function animateCount(element, target, duration) {
+      let start = 0;
+      const end = parseInt(target);
+      const range = end - start;
+      let current = start;
+      const increment = end > start ? 1 : -1;
+      const stepTime = Math.abs(Math.floor(duration / range));
+      const timer = setInterval(() => {
+        current += increment;
+        element.textContent = current;
+        if (current == end) {
+          clearInterval(timer);
+          element.textContent = target; // To add the '+' sign if present
+        }
+      }, stepTime);
+    }
+  
+    document.addEventListener('DOMContentLoaded', () => {
+      const clientCount = document.getElementById('clientCount');
+      const projectCount = document.getElementById('projectCount');
+      const teamCount = document.getElementById('teamCount');
+  
+      animateCount(clientCount, '10,000+', 2000);
+      animateCount(projectCount, '100+', 2000);
+      animateCount(teamCount, '150+', 2000);
+    });
+  </script>
+</body>
+</html>
